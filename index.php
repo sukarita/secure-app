@@ -40,15 +40,12 @@ if(isset($_POST["user"]) && ($_POST["password"])){
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
-    <title>INSERT TITLE HERE</title>
+    <title>Iniciar Sesión</title>
 </head>
 <body>
-
+<h1>Iniciar Sesión</h1>
 <?= $message?><br>
-<a href="secure/welcome.php">Welcome</a>
-<a href="secure/config.php">Secure</a>
-<a href="secure/account.php">Account</a>
-<a href="secure/logout.php">Logout</a>
+
 
 
     <form action="" method="post">
