@@ -8,7 +8,6 @@
 session_start();
 
 $user = "";
-if(isset($_SESSION["usuario_autorizado"])){
     $user = $_SESSION["usuario_autorizado"];
 }
 
