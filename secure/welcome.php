@@ -27,7 +27,6 @@ header("Location: http://localhost/");  //entonces le redirigimos a la pagina de
 </head>
 <body>
 <h1> Bienvenido a tu area privada</h1>
-<a href="../index.php">Welcome</a>
 <a href="config.php">Secure</a>
 <a href="account.php">Account</a>
 <a href="logout.php">Logout</a>
