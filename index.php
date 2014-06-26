@@ -32,6 +32,10 @@ if(isset($_POST["user"]) && ($_POST["password"])){
 <body>
 
 <?= $message?><br>
+<a href="secure/welcome.php">Enlace a Welcome</a>
+<a href="secure/config.php">Enlace a Secure</a>
+<a href="secure/account.php.php">Enlace a Account</a>
+
 
     <form action="" method="post">
         <input type="text" name="user" value="<?= $user ?>" placeholder="Usuario"><br>
