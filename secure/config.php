@@ -28,7 +28,11 @@ if ($user=="" || $user != "cris"){    //si el usuario esta vacio o no es cris
 
 <h1> Estoy en Config</h1>
 <p>Esta es una página con acceso restringido</p>
-<a href="welcome.php">Enlace a Welcome</a>
+<a href="../index.php">Welcome</a>
+<a href="config.php">Secure</a>
+<a href="account.php">Account</a>
+<a href="logout.php">Logout</a>
+
 
 </body>
 </html>

@@ -27,8 +27,12 @@ if ($user=="" || $user != "cris"){    //si el usuario esta vacio o no es cris
 <body>
 welcome to your secure area
 <h1> Bienvenido a tu area privada</h1>
+<a href="../index.php">Welcome</a>
+<a href="config.php">Secure</a>
+<a href="account.php">Account</a>
+<a href="logout.php">Logout</a>
+
 <p>Esta es una página con acceso restringido</p>
-<a href="config.php">Enlace redirecciona a la página de config</a>
 
 </body>
 </html>
