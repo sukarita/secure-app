@@ -1,17 +1,25 @@
 <?php
 
-//Me interesa por ahora imprimir los valores que mete el usuario para compronbar que estamos recibiendo datos. Una vez revisado borrar
+session_start();
 
-echo $_POST["user"];
-print_r($_POST); //nos saca todo el array
+$user = "";
+$message = "";
+
 
 if(isset($_POST["user"]) && ($_POST["password"])){
     $user = $_POST["user"];
     $password = $_POST["password"];
 
     if ($user =="cris" && $password=="123" ){
-    echo "Muy Bien";    //comprobamos que funciona y que imprime
+        $_SESSION["usuario_autorizado"] = $user;  //autentificamos siempre antes de header
+        header("location: http://localhost/secure/welcome.php");
+
     }
+
+    else{
+        $message = "Usuario/contraseña no coinciden";
+    }
+
 }
 ?>
 <!DOCTYPE html>
@@ -22,8 +30,11 @@ if(isset($_POST["user"]) && ($_POST["password"])){
     <title>INSERT TITLE HERE</title>
 </head>
 <body>
+
+<?= $message?><br>
+
     <form action="" method="post">
-        <input type="text" name="user" placeholder="Usuario"><br>
+        <input type="text" name="user" value="<?= $user ?>" placeholder="Usuario"><br>
         <input type="password" name="password" placeholder="Contraseña"><br>
         <input type="submit" value="Login">
     </form>
